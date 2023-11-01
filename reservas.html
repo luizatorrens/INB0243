@@ -106,6 +106,68 @@
     <!-- Custom styles for this template -->
     <link href="checkout.css" rel="stylesheet">
   </head>
+
+  <header>
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light m-3">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt- mt-lg-0" href="#">
+          <img
+            src="https://hotelvaledaspedras.com.br/wp-content/uploads/2017/05/Logo-novo-2017-sem-contato.png"
+            height="50"
+            loading="lazy"
+          />
+        </a>
+      </div>
+        <!-- Left links -->
+        <div class="float-end">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-6">
+          <li class="nav-item m-2">
+            <a class="nav-link text-dark" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link text-dark" href="./espacos.html">Espaços</a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link text-dark" href="./pacotes.html">Pacotes</a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link text-dark" href="./endereco.html">Endereço</a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link text-dark" href="./passeio.html">Passeios</a>
+          </li>
+          <li class="nav-item m-2">
+            <a href="./contato.html" class="nav-link text-dark">Contato</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+  
+  </header>
+  
   <body class="bg-body-tertiary">
     
 
@@ -119,7 +181,7 @@
       <h2 class="m-5">Continuar reserva</h2>
 
         
-      <div class="col-md-7 col-lg-8">
+      <div class="justify-content-center align-itens-center row mb-3 text-center m-5">
         <h4 class="mb-3">Informações Pessoais</h4>
         <form class="needs-validation" novalidate>
           <div class="row g-3">
@@ -191,27 +253,27 @@
 
           <div class="row gy-3">
             <div class="col-md-6">
-              <label for="cc-name" class="form-label">Name on card</label>
+              <label for="cc-name" class="form-label">Nome no cartão</label>
               <input type="text" class="form-control" id="cc-name" placeholder="" required>
-              <small class="text-body-secondary">Full name as displayed on card</small>
+              <small class="text-body-secondary">Nome completo como no cartão</small>
               <div class="invalid-feedback">
-                Name on card is required
+                Nome no cartão é necessário
               </div>
             </div>
 
             <div class="col-md-6">
-              <label for="cc-number" class="form-label">Credit card number</label>
+              <label for="cc-number" class="form-label">Número do cartão de crédito</label>
               <input type="text" class="form-control" id="cc-number" placeholder="" required>
               <div class="invalid-feedback">
-                Credit card number is required
+                Número do cartão é necessário 
               </div>
             </div>
 
             <div class="col-md-3">
-              <label for="cc-expiration" class="form-label">Expiration</label>
+              <label for="cc-expiration" class="form-label">Data de Validade</label>
               <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
               <div class="invalid-feedback">
-                Expiration date required
+                Data de validade
               </div>
             </div>
 
@@ -219,7 +281,7 @@
               <label for="cc-cvv" class="form-label">CVV</label>
               <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
               <div class="invalid-feedback">
-                Security code required
+                Código de segurança
               </div>
             </div>
           </div>
